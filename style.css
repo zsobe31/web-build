@@ -155,8 +155,6 @@ body, html {
 /*========= footer ========*/
 #footer {
     background: #5e9ca1;
-    padding-top: 30px;
-    height: 10%;
 }
 @media only screen and (max-device-width: 1366px){
     .box .h4 {
