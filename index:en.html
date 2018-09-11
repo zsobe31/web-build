@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>websit creator</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- KERESŐMOTOR OPTIMALIZÁLÁS -->
+		<meta name="author" content="Zsolt Szabó" />		
+		<meta name="description" content="webdesign, web-build, Baranya" />
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="webdesign, web-build, Baranya" />
+		<meta name="classification" content="webdesign, web-build, Baranya" />		
+		<meta name="subject" content="webdesign, web-build, Baranya" />
+		<meta name="revisit-after" content="5 days" />
+		<meta name="country" content="Hungary">
+	    <meta name="content-language" content="hu, hun, hungarian">
+	    <link rel="alternate" href="http://www.web-build.eu/" hreflang="hu" />
+		<link rel="alternate" href="http://www./" hreflang="en" />
+
+		<!-- FAVICON HOZZÁADÁSA -->
+		<link rel="icon" href="img/icons8-design-48.png" type="image/gif" sizes="16x16">
+
+		<!-- FONT-FAMILY ADD -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+		<!-- ICON-FAMILY ADD -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- BOOTSTRAP 4 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- SAJÁT STILUS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- SCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+		<!-- BELSŐ SCRIPT -->
+		<script type="text/javascript">
+
+			// nyíl lefelé
+			var wss_i = 0;
+
+			var wss_array = ['<img src="img/icons8-below-50.png">'];
+
+			var wss_elem;
+
+			function wssNext(){
+				wss_i++;
+				wss_elem.style.opacity = 0;
+				if (wss_i > (wss_array.length -1)) {
+					wss_i = 0;
+				}
+				setTimeout("wssSlide()",1000);
+			}
+
+			function wssSlide(){
+				wss_elem.innerHTML = wss_array[wss_i];
+				wss_elem.style.opacity = 1;
+				setTimeout("wssNext()",2000);
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<!----- FŐOLDAL ----->
+		<section id="main" class="container-fluid">
+
+			<!-- NAVBAR -->
+			<nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">	
+
+						<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+
+						<a class="navbar-brand" href="http://www.web-build.eu/">
+							<img src="img/hun.png" style="height: 25px">
+						</a>
+						<a href="">
+							<img src="img/en.png" style="height: 25px">
+						</a>
+						
+
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#main">Home</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section-1">About</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section-2">Projects</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section-3">Contact</a>
+							</li>
+						</ul>
+					</div>
+
+			</nav>
+			<!-- NAVBAR VÉGE -->
+
+			<!-- SZÖVEG DOBOZ-1 -->
+			<div class="container box1">
+
+				<h1 class="h1">Zsolt Szabó</h1>
+				<h2 class="h2">Website creator</h2>
+
+			</div>
+			<!-- SZÖVEG DOBOZ VÉGE -->
+
+			<!-- SZÖVEG DOBOZ-2 -->
+			<div class="container box2">
+							
+				<a class="nav-link" href="#section-1">
+					<span id="wss"></span>
+				</a>
+					
+				<script type="text/javascript">
+	
+					wss_elem = document.getElementById("wss");
+					wssSlide();
+
+				</script>
+
+			</div>
+			<!-- SZÖVEG DOBOZ-2 VÉGE -->
+
+		</section>
+		<!----- FŐOLDAL VÉGE ----->
+
+		<!----- SECTION-1 ----->
+		<section id="section-1" class="container-fluid">
+			<h3 class="h3 text-center">I'll help you!</h3>
+			<div class="row">
+				<div class="col-10 col-md-3 mx-auto">
+					<img src="img/icons8-idea-50.png" class="img-fluid mx-auto d-flex">
+					<h4 class="h4 text-center">Idea</h4>
+					<p class="text-justify">We sit down and discuss what you want to achieve, what your goals and expectations are for your website. It is important to keep in mind what the web site is designed for. The goal defines the form and content.</p>
+				</div>
+				<div class="col-10 col-md-3 mx-auto">
+					<img src="img/icons8-design-50.png" class="img-fluid mx-auto d-flex">
+					<h4 class="h4 text-center">Implementation</h4>
+					<p class="text-justify">I'm a minimalist who really believes that fewer. It's important that users get answers quickly and easily, and make the website easy to use.</p>
+				</div>
+				<div class="col-10 col-md-3 mx-auto">
+					<img src="img/icons8-maintenance-50.png" class="img-fluid mx-auto d-flex">
+					<h4 class="h4 text-center">Service</h4>
+					<p class="text-justify">Websites must be modern, trendy and fresh. This means a lot of tasks. Whether it is occasional or regular maintenance tasks.</p>
+				</div>
+			</div>
+		</section>
+		<!----- SECTION-1 VÉGE ----->
+
+		<!----- SECTION-2 ----->
+		<section id="section-2" class="container-fluid">
+			<h3 class="h3 text-center">Projects</h3>
+			<div class="row">				
+				<div class="container col-7 col-md-4 mx-auto">
+					<a href="https://zsobe31.github.io/project-banhegyi-mez/" target="_blank">
+						<img src="img/webdesign.png" alt="Avatar" class="images img-fluid mx-auto d-flex">
+						<div class="overlay">
+							<div class="text">The bee of Banhegyi</div>
+						</div>
+					</a>
+				</div>
+				<div class="container col-7 col-md-4 mx-auto">
+					<a href="#section-1">
+						<img src="img/webdesign.png" alt="Avatar" class="images img-fluid mx-auto d-flex">
+						<div class="overlay">
+							<div class="text">Your webpage</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!----- SECTION-2 VÉGE ----->
+
+		<!----- SECTION-3 ----->
+		<section id="section-3" class="container-fluid">
+			<h3 class="h3 text-center">Contact</h3>
+			
+			<div class="row kozossegi">
+				<a href="https://www.facebook.com/zsolt.szabo.5623293" class="ml-auto mr-3">
+					<img src="img/icons8-facebook-50.png" class="img-fluid">
+				</a>
+				<a href="https://www.linkedin.com/in/zsolt-szab%C3%B3-745965159/" class="mr-3">
+					<img src="img/icons8-linkedin-50.png" class="img-fluid">
+				</a>
+				<a href="https://github.com/zsobe31?tab=repositories" class="mr-3">
+					<img src="img/icons8-github-50.png" class="img-fluid">
+				</a>
+				<a href="mailto:zsobe31@gmail.com" class="mr-3">
+					<img src="img/icons8-gmail-50.png" class="img-fluid">
+				</a>
+				<a href="tel: +36 70 332 8437" class="mr-auto">
+					<img src="img/icons8-phone-50.png" class="img-fluid">
+				</a>
+			</div>
+		</section>
+		<!----- SECTION-3 VÉGE ----->
+
+		<!----- LÁBLÉC ----->
+		<section id="footer" class="container-fluid">
+			<p class="text-center">Copyright © 2018 by Zsolt</p>
+		</section>
+		<!----- LÁBLÉC VÉGE ----->
+
+		<!-- SCRIPT -->
+		<script src="script.js"></script>
+	</body>
+</html>
+
+
+
+
+
